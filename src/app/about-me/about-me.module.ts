@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { AboutMeComponent } from './about-me.component';
 import {EducationComponent} from './education/education.component';
+import { ExperienceComponent } from './experience/experience.component';
+
 
 @NgModule({
     imports: [CommonModule],
   declarations: [
-    AboutMeComponent, EducationComponent
+    AboutMeComponent, EducationComponent, ExperienceComponent
   ],
   providers: [],
   exports: [AboutMeComponent]

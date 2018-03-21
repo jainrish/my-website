@@ -1,12 +1,12 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: 'education',
-    templateUrl: './education.component.html',
-    styleUrls: ['./education.component.css']
+    selector: 'experience',
+    templateUrl: './experience.component.html',
+    styleUrls: ['./experience.component.css']
 })
 
-export class EducationComponent {
+export class ExperienceComponent {
     pageTitle: string =  "Education History";
     imageWidth: number = 1000;
     imageHeight: number = 200;
