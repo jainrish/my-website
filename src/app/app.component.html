@@ -15,30 +15,10 @@
                   </ul>
               </li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right" *ngFor="let socialMediaLink of socialMediaLinks">
             <li>
-              <a href="https://www.facebook.com/rishabh189" target="_blank">
-                <i class="fa fa-facebook" style="font-size:18px;color:#337ab7" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://rishabhjainnsit.wordpress.com/" target="_blank">
-                <i class="fa fa-wordpress" style="font-size:18px;color:#337ab7" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/rjain189/" target="_blank">
-                <i class="fa fa-linkedin" style="font-size:18px;color:#337ab7" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/jainrish" target="_blank" title="hover text">
-                <i class="fa fa-github" style="font-size:18px;color:#337ab7" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/rishbishjain" target="_blank">
-                <i class="fa fa-instagram" style="font-size:18px;color:#337ab7" aria-hidden="true"></i>
+              <a title="{{socialMediaLink.title}}" href="{{socialMediaLink.profileLink}}" target="_blank">
+                <i class="{{socialMediaLink.cssClass}}" style="font-size:18px;color:#337ab7" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
