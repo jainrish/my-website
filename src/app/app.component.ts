@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {AboutMeComponent} from './about-me/about-me.component';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-root',

@@ -1,37 +1,144 @@
- <div class="row">
-        <div class="col-md-4">
-            <img id="rcorners1" [src]='selectedInstutiteURL' [style.marginTop.px]='imageMargin' [style.marginBottom.px]='imageMargin'
-                [style.marginLeft.px]='imageLeftMargin' [style.width.px]='imageWidth' [style.height.px]='imageHeight'>
+<section id="skills" class="skills-section section-padding">
+    <div class="container">
+        <h2 class="section-title wow fadeInUp">Skills</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="skill-progress">
+                    <div class="skill-title">
+                        <h3>Interpersonal</h3>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            <span>99%</span>
+                        </div>
+                    </div>
+                    <!-- /.progress -->
+                </div>
+                <!-- /.skill-progress -->
+
+                <div class="skill-progress">
+                    <div class="skill-title">
+                        <h3>Development</h3>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <span>95%</span>
+                        </div>
+                    </div>
+                    <!-- /.progress -->
+                </div>
+                <!-- /.skill-progress -->
+                <div class="skill-progress">
+                    <div class="skill-title">
+                        <h3>Problem Solving</h3>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <span>92%</span>
+                        </div>
+                    </div>
+                    <!-- /.progress -->
+                </div>
+                <!-- /.skill-progress -->
+            </div>
+            <!-- /.col-md-6 -->
+
+            <div class="col-md-6">
+                <div class="skill-progress">
+                    <div class="skill-title">
+                        <h3>Design</h3>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <!-- /.progress -->
+                </div>
+                <!-- /.skill-progress -->
+                <div class="skill-progress">
+                    <div class="skill-title">
+                        <h3>Communication</h3>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <span>97%</span>
+                        </div>
+                    </div>
+                    <!-- /.progress -->
+                </div>
+                <!-- /.skill-progress -->
+                <div class="skill-progress">
+                    <div class="skill-title">
+                        <h3>Team Player</h3>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <!-- /.progress -->
+                </div>
+                <!-- /.skill-progress -->
+            </div>
+            <!-- /.col-md-6 -->
         </div>
-        <div class=col-md-8 [style.marginTop.px]='descriptionMarginTop'>
-            {{selectedInstutiteDescription}}
+        <!-- /.row -->
+
+        <div class="skill-chart text-center">
+            <h3>More skills</h3>
+        </div>
+
+        <div class="row more-skill text-center">
+            <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="chart" data-percent="90" data-color="e74c3c">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                        <span>Leadership</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="chart" data-percent="94" data-color="2ecc71">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                        <span>Creativity</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="chart" data-percent="91" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                        <span>Ideasmith</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="chart" data-percent="92" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                        <span>Coding</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="chart" data-percent="97" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                        <span>Optimism</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="chart" data-percent="95" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                        <span>Motivation</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class='table-responsive'>
-        <table class='table' *ngIf='institutions && institutions.length'>
-            <thead>
-                <tr>
-                    <th>Institution Name</th>
-                    <th>Location</th>
-                    <th>Graduation Date</th>
-                    <th>CGPA</th>
-                    <th>Degree Received</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let institution of institutions; let i = index" (click)='updateInstitute(i)' style="cursor: pointer;">
-                    <td>
-                        <a href={{institution.url}} target="_blank">
-                            {{ institution.institionName }}
-                        </a>
-                    </td>
-                    <td>
-                        <a href={{institution.locationURL}} target="_blank">{{ institution.location }}</a>
-                    </td>
-                    <td>{{ institution.graduationDate }}</td>
-                    <td>{{ institution.cgpa }}</td>
-                    <td>{{ institution.degree }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+</section>

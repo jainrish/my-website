@@ -6,6 +6,7 @@ import { AboutMeComponent } from './about-me.component';
 import {EducationComponent} from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import {WhoAmIComponent} from './whoami/whoami.component';
+import {SkillsComponent} from './skills/skills.component';
 
 const aboutMeRoutes: Routes = [
   { path: 'aboutme',  component: AboutMeComponent },
@@ -21,7 +22,7 @@ export const aboutMeRouting = RouterModule.forChild(aboutMeRoutes);
       RouterModule,
       aboutMeRouting],
   declarations: [
-    AboutMeComponent, EducationComponent, ExperienceComponent, WhoAmIComponent
+    AboutMeComponent, EducationComponent, ExperienceComponent, WhoAmIComponent, SkillsComponent
   ],
   providers: [],
   exports: [AboutMeComponent]

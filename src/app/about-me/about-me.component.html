@@ -2,10 +2,10 @@
   <div class="navbar-collapse collapse" id="ftheme">
     <ul class="nav navbar-nav navbar-left ">
       <li>
-        <a [routerLink]="['/aboutme/whoami']">About Me</a>
+        <a (click)="ShowWhoAmI()">About Me</a>
       </li>
       <li>
-        <a [routerLink]="['/aboutme/education']">Education</a>
+        <a (click)="ShowEducation()">Education</a>
       </li>
       <li>
         <a href="#service">Experience</a>
@@ -23,5 +23,10 @@
       </li>
     </ul>
   </div>
-  <education></education>
+  <div *ngIf="showWhoAmI">
+    <whoami></whoami>
+  </div>
+  <div *ngIf="showEducation">
+    <education></education>
+  </div>
 </div>
