@@ -1,28 +1,47 @@
 <div class="bs-example">
   <nav class="navbar navbar-default">
-      <div id="navbarCollapse" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Profile</a></li>
-              <li class="dropdown">
-                  <a data-toggle="dropdown" class="dropdown-toggle" href="#">Messages <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Inbox</a></li>
-                      <li><a href="#">Drafts</a></li>
-                      <li><a href="#">Sent Items</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Trash</a></li>
-                  </ul>
-              </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right" *ngFor="let socialMediaLink of socialMediaLinks">
+    <div class="navbar-collapse collapse" id="ftheme">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="active">
+          <a style="color:#337ab7" href="#">
+            <b>Home</b>
+          </a>
+        </li>
+        <li>
+          <a style="color:#337ab7" href="https://rishabhjainnsit.wordpress.com/" target="_blank">
+            <b>Blog</b>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a style="color:#337ab7" data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <b>Messages</b>
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
             <li>
-              <a title="{{socialMediaLink.title}}" href="{{socialMediaLink.profileLink}}" target="_blank">
-                <i class="{{socialMediaLink.cssClass}}" style="font-size:18px;color:#337ab7" aria-hidden="true"></i>
-              </a>
+              <a href="#">Inbox</a>
+            </li>
+            <li>
+              <a href="#">Drafts</a>
+            </li>
+            <li>
+              <a href="#">Sent Items</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">Trash</a>
             </li>
           </ul>
-      </div>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" *ngFor="let socialMediaLink of socialMediaLinks">
+        <li>
+          <a title="{{socialMediaLink.title}}" href="{{socialMediaLink.profileLink}}" target="_blank">
+            <i class="{{socialMediaLink.cssClass}}" style="font-size:18px;color:#337ab7" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </div>
 <about-me></about-me>
