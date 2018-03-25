@@ -3,28 +3,25 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AboutMeComponent } from './about-me.component';
-import {EducationComponent} from './education/education.component';
+import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
-import {WhoAmIComponent} from './whoami/whoami.component';
-import {SkillsComponent} from './skills/skills.component';
+import { WhoAmIComponent } from './whoami/whoami.component';
+import { SkillsComponent } from './skills/skills.component';
 
 const aboutMeRoutes: Routes = [
-  { path: 'aboutme',  component: AboutMeComponent },
-  { path: 'aboutme/whoami',  component: WhoAmIComponent },
-  { path: 'aboutme/education',  component: EducationComponent },
-  { path: 'aboutme/experience',  component: ExperienceComponent }
+  { path: 'aboutme', component: AboutMeComponent }
 ];
 
 export const aboutMeRouting = RouterModule.forChild(aboutMeRoutes);
 
 @NgModule({
-    imports: [CommonModule, 
-      RouterModule,
-      aboutMeRouting],
+  imports: [CommonModule,
+    RouterModule,
+    aboutMeRouting],
   declarations: [
     AboutMeComponent, EducationComponent, ExperienceComponent, WhoAmIComponent, SkillsComponent
   ],
   providers: [],
   exports: [AboutMeComponent]
-})  
+})
 export class AboutMeModule { }

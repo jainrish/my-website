@@ -11,7 +11,7 @@
         <a href="#service">Experience</a>
       </li>
       <li>
-        <a href="#applications">Skills</a>
+        <a (click)="ShowSkills()">Skills</a>
       </li>
       <li>
         <a href="#contact">Hobbies</a>
@@ -28,5 +28,8 @@
   </div>
   <div *ngIf="showEducation">
     <education></education>
+  </div>
+  <div *ngIf="showSkills">
+    <skills></skills>
   </div>
 </div>

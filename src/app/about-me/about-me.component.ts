@@ -11,22 +11,30 @@ export class AboutMeComponent {
 
   showWhoAmI: boolean;
   showEducation: boolean;
+  showSkills: boolean;
 
   constructor() {
     this.showWhoAmI = true;
     this.showEducation = false;
+    this.showSkills = false;
   }
 
   ShowWhoAmI() {
     this.showWhoAmI = true;
     this.showEducation = false;
-    console.log(this.showEducation);
+    this.showSkills = false;
   }
 
   ShowEducation() {
     this.showWhoAmI = false;
     this.showEducation = true;
-    console.log(this.showEducation);
+    this.showSkills = false;
+  }
+
+  ShowSkills() {
+    this.showWhoAmI = false;
+    this.showEducation = false;
+    this.showSkills = true;
   }
 }
 
