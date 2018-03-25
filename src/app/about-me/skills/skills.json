@@ -1,0 +1,26 @@
+[
+    {
+        "institionId": 1,
+        "institionName": "Netaji Subhas Institute of Technology, University of Delhi",
+        "address": "New Delhi, India",
+        "graduationDate": "31/05/2015",
+        "degree": "Bachelors of Engineering",
+        "cgpa": 7.57
+    },
+    {
+        "institionId": 2,
+        "institionName": "D.A.V. Public School",
+        "address": "Sector 14, Gurgaon, Haryana",
+        "graduationDate": "31/03/2011",
+        "degree": "Senior Secondary School Examination",
+        "cgpa": "93.4%"
+    },
+    {
+        "institionId": 3,
+        "institionName": "Air Force School",
+        "address": "Sector 14, Gurgaon, Haryana",
+        "graduationDate": "31/03/2011",
+        "degree": "Secondary School Examination",
+        "cgpa": "92.6%"
+    }
+]

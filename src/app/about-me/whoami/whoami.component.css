@@ -9,7 +9,9 @@ body {
 	border-radius:0;
 }
 
-.navbar-custom {
-    color: #FFFFFF;
-    background-color: #CC3333;
+#rcorners1 {
+    border-radius: 25px;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;    
 }

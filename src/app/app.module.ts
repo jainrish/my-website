@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import {AboutMeModule} from './about-me/about-me.module'
+import {AboutMeComponent} from './about-me/about-me.component'
 
 @NgModule({
   declarations: [
@@ -10,7 +11,10 @@ import {AboutMeModule} from './about-me/about-me.module'
   ],
   imports: [
     BrowserModule,
-    AboutMeModule
+    AboutMeModule,
+    RouterModule.forRoot([
+      { path: '', redirectTo: '/', pathMatch: 'full', }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
