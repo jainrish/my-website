@@ -2,16 +2,16 @@
   <div class="navbar-collapse collapse" id="ftheme">
     <ul class="nav navbar-nav navbar-left ">
       <li>
-        <a (click)="ShowWhoAmI()">About Me</a>
+        <a (click)="showWhoAmIMethod()">About Me</a>
       </li>
       <li>
-        <a (click)="ShowEducation()">Education</a>
+        <a (click)="showEducationMethod()">Education</a>
       </li>
       <li>
-        <a href="#service">Experience</a>
+        <a (click)="showExperienceMethod()">Experience</a>
       </li>
       <li>
-        <a (click)="ShowSkills()">Skills</a>
+        <a (click)="showSkillsMethod()">Skills</a>
       </li>
       <li>
         <a href="#contact">Hobbies</a>
@@ -32,6 +32,9 @@
   <div *ngIf="showSkills">
     <skills></skills>
   </div>
+  <div *ngIf="showExperience">
+      <experience></experience>
+    </div>
 </div>
 <div class="row text-center">
   <div class="col-md-4">

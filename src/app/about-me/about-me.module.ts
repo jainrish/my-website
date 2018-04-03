@@ -19,7 +19,7 @@ export const aboutMeRouting = RouterModule.forChild(aboutMeRoutes);
     RouterModule,
     aboutMeRouting],
   declarations: [
-    AboutMeComponent, EducationComponent, ExperienceComponent, WhoAmIComponent, SkillsComponent
+    AboutMeComponent, EducationComponent, ExperienceComponent, WhoAmIComponent, SkillsComponent, ExperienceComponent
   ],
   providers: [],
   exports: [AboutMeComponent]

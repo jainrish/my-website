@@ -1,39 +1,26 @@
-<div id="wrapper" class="container well">
-    <div class="row">
-        <div class="col-md-4">
-            <img id="rcorners1" [src]='selectedInstutiteURL' [style.marginTop.px]='imageMargin' [style.marginBottom.px]='imageMargin'
-                [style.marginLeft.px]='imageLeftMargin' [style.width.px]='imageWidth' [style.height.px]='imageHeight'>
-        </div>
-        <div class=col-md-8 [style.marginTop.px]='descriptionMarginTop'>
-            {{selectedInstutiteDescription}}
-        </div>
-    </div>
-    <div class='table-responsive'>
-        <table class='table' *ngIf='institutions && institutions.length'>
-            <thead>
-                <tr>
-                    <th>Institution Name</th>
-                    <th>Location</th>
-                    <th>Graduation Date</th>
-                    <th>CGPA</th>
-                    <th>Degree Received</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let institution of institutions; let i = index" (click)='updateInstitute(i)' style="cursor: pointer;">
-                    <td>
-                        <a href={{institution.url}} target="_blank">
-                            {{ institution.institionName }}
-                        </a>
-                    </td>
-                    <td>
-                        <a href={{institution.locationURL}} target="_blank">{{ institution.location }}</a>
-                    </td>
-                    <td>{{ institution.graduationDate }}</td>
-                    <td>{{ institution.cgpa }}</td>
-                    <td>{{ institution.degree }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div class='table-responsive'>
+    <table class='table' *ngIf='experiences && experiences.length'>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Location</th>
+                <th>Job Period</th>
+                <th>Designation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let experience of experiences; let i = index" style="cursor: pointer;">
+                <td>
+                    <a href={{experience.companyUrl}} target="_blank">
+                        {{ experience.companyName }}
+                    </a>
+                </td>
+                <td>
+                    <a href={{experience.locationURL}} target="_blank">{{ experience.location }}</a>
+                </td>
+                <td>{{ experience.period }}</td>
+                <td>{{ experience.designation }}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

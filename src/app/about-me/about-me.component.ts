@@ -12,29 +12,42 @@ export class AboutMeComponent {
   showWhoAmI: boolean;
   showEducation: boolean;
   showSkills: boolean;
+  showExperience: boolean;
 
   constructor() {
     this.showWhoAmI = true;
     this.showEducation = false;
     this.showSkills = false;
+    this.showExperience = false;
   }
 
-  ShowWhoAmI() {
+  showWhoAmIMethod(): void {
     this.showWhoAmI = true;
     this.showEducation = false;
     this.showSkills = false;
+    this.showExperience = false;
   }
 
-  ShowEducation() {
+  showEducationMethod(): void {
     this.showWhoAmI = false;
     this.showEducation = true;
     this.showSkills = false;
+    this.showExperience = false;
   }
 
-  ShowSkills() {
+  showSkillsMethod(): void {
     this.showWhoAmI = false;
     this.showEducation = false;
     this.showSkills = true;
+    this.showExperience = false;
   }
+
+  showExperienceMethod(): void {
+    this.showWhoAmI = false;
+    this.showEducation = false;
+    this.showSkills = false;
+    this.showExperience = true;
+  }
+
 }
 

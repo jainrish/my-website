@@ -7,57 +7,91 @@ import { Component } from "@angular/core";
 })
 
 export class ExperienceComponent {
-    pageTitle: string =  "Education History";
+    pageTitle: string =  "Work Experience";
     imageWidth: number = 1000;
     imageHeight: number = 200;
     imageMargin: number = 10;
     imageLeftMargin: number = 5;
     descriptionMarginTop: number = 30;
 
-    institutions: any[] = [
+    experiences: any[] = [
         {
-            "institionId": 1,
-            "institionName": "Netaji Subhas Institute of Technology, University of Delhi",
-            "location": "Dwarka, New Delhi, India",
-            "graduationDate": "May 31, 2015",
-            "degree": "Bachelors of Engineering",
-            "cgpa": 7.57,
-            "url": "http://www.nsit.ac.in/",
-            "image": "../../../assets/images/about-me/education/nsit.jpg",
-            "description": "I pursued B.E. from NSIT, Delhi in the field of Computer Engineering. I started studying at NSIT from August, 2011 and graduated in May, 2015. Relevant subjects include Introduction to Programming, Data Structures, Principles of Computer Graphics, Database Management, Advance Computer Architecture, Operating Systems, Computer Systems Architecture.",
-            "locationURL": "https://goo.gl/ncNBfQ"
+          "companyId": 1,
+          "companyName": "Morgan Stanley",
+          "companyUrl": "https://www.morganstanley.com/",
+          "location": "Bengaluru, India",
+          "locationUrl": "https://goo.gl/FSgixt",
+          "period": "October, 2017 - Present",
+          "designation": "Senior Associate",
+          "projects": [
+            {
+              "projectID": 1,
+              "projectName": "ObjectModel and Distributed Cache",
+              "description": [
+                {
+                  "line": "Implemented a distributed “Gemfire“ caching system, which allows clients with extremely fast access to data"
+                },
+                {
+                  "line": "Created REST and SOAP based Web Services on top of cache"
+                },
+                {
+                  "line": "Key Achievements: Brought down the latency of web service to 50-60 ms as compared to 2 seconds earlier"
+                },
+                {
+                  "line": "o Handling 5000 requests per second, system was running 200 million evaluations in 12 hours, same used to take more than 2 weeks before."
+                }
+              ]
+            }
+          ]
         },
         {
-            "institionId": 2,
-            "institionName": "D.A.V. Public School",
-            "location": "Sector 14, Gurgaon, Haryana, India",
-            "graduationDate": "March 31, 2011",
-            "degree": "Senior Secondary School Examination",
-            "cgpa": "9.34",
-            "url": "http://www.dav14gurgaon.org/page/index.html",
-            "image": "../../../assets/images/about-me/education/dav.png",
-            "description": "I studied in D.A.V. Public School from April, 2009 to March, 2011 and graduated with a percentage of 93.4. Relevant subjects include Mathematics, Physics and Chemistry. I scored 99/100 in Mathematics, 94/100 in Physics and 96/100 in Chemistry.",
-            "locationURL": "https://goo.gl/gPZirz"
+          "companyId": 2,
+          "companyName": "Accolite Inc.",
+          "companyUrl": "http://accolite.com/",
+          "location": "Bengaluru, India",
+          "locationUrl": "https://goo.gl/U3ttxD",
+          "period": "July, 2015 - October, 2017",
+          "designation": "Senior Software Engineer",
+          "projects": [
+            {
+              "projectID": 1,
+              "projectName": "Conference Room Management System (CRMS)",
+              "description": [
+                {
+                  "line": "Developed a fast, secure and user-friendly web application that lets a user book a conference room across all the locations of a company"
+                },
+                {
+                  "line": "Implemented features such as admin override feature and email notification features"
+                }, {
+                  "line": "Responsible for developing restful APIs for website and optimized by caching generic requests using Guava cache"
+                }
+              ]
+            }
+          ]
         },
         {
-            "institionId": 3,
-            "institionName": "Air Force School",
-            "location": "Sector 14, Gurgaon, Haryana, India",
-            "graduationDate": "March 31, 2009",
-            "degree": "Secondary School Examination",
-            "cgpa": "9.26",
-            "url": "http://www.afsgurgaon.net/afs/index.html",
-            "image": "../../../assets/images/about-me/education/afs.jpg",
-            "description": "",
-            "locationURL": "https://goo.gl/hiQbHn"
+          "companyId": 3,
+          "companyName": "Samsung Research Institute",
+          "companyUrl": "http://www.samsung.com/", 
+          "location": "Bengaluru, India",
+          "locationUrl": "https://goo.gl/c871aZ",
+          "period": "June, 2014 - July 2014",
+          "designation": "Intern",
+          "projects": [
+            {
+              "projectID": 1,
+              "projectName": "Access Control System",
+              "description": [
+                {
+                  "line": "Analyzed several research papers and implemented several One Time Password (OTP) algorithms including TOTP, HOTP, and OCRA"
+                },
+                {
+                  "line": "Analyzed several research papers and implemented several One Time Password (OTP) algorithms including TOTP, HOTP, and OCRA"
+                }
+              ]
+            }
+          ]
         }
-    ]
+      ]
 
-    selectedInstutiteURL: string = this.institutions[0].image;
-    selectedInstutiteDescription: string = this.institutions[0].description;
-
-    updateInstitute(index) : void {
-        this.selectedInstutiteURL = this.institutions[index].image;
-        this.selectedInstutiteDescription = this.institutions[index].description;
-    }
 }   
