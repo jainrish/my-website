@@ -12,28 +12,7 @@
             <b>Blog</b>
           </a>
         </li>
-        <li class="dropdown">
-          <a style="color:#337ab7" data-toggle="dropdown" class="dropdown-toggle" href="#">
-            <b>Messages</b>
-            <b class="caret"></b>
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="#">Inbox</a>
-            </li>
-            <li>
-              <a href="#">Drafts</a>
-            </li>
-            <li>
-              <a href="#">Sent Items</a>
-            </li>
-            <li class="divider"></li>
-            <li>
-              <a href="#">Trash</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+       </ul>
       <ul class="nav navbar-nav navbar-right" *ngFor="let socialMediaLink of socialMediaLinks">
         <li>
           <a title="{{socialMediaLink.title}}" href="{{socialMediaLink.profileLink}}" target="_blank">

@@ -1,9 +1,9 @@
 <div class="row">
         <div class="col-md-4">
-            <img id="rcorners1" [src]='selectedInstutiteURL' [style.marginTop.px]='imageMargin' [style.marginBottom.px]='imageMargin'
+            <img id="rcorners1" src={{whoamiSummary.image}} [style.marginTop.px]='imageMargin' [style.marginBottom.px]='imageMargin'
                 [style.marginLeft.px]='imageLeftMargin' [style.width.px]='imageWidth' [style.height.px]='imageHeight'>
         </div>
         <div class=col-md-8 [style.marginTop.px]='descriptionMarginTop'>
-            {{selectedInstutiteDescription}}
+            {{whoamiSummary.description}}
         </div>
     </div>
